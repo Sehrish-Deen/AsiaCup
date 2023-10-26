@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery</title>
+
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        hr {
+            margin-top: 40px;
+        }
+
+        .image-container {
+            position: relative;
+            width: 100%;
+
+        }
+
+        #img {
+
+            height: 400px;
+            width: 100vw;
+            filter: blur(3px);
+        }
+
+        .text-overlay {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            color: white;
+        }
+
+        h1 {
+            font-size: 80px;
+            margin-bottom: 10px;
+            color: rgb(32, 32, 164);
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin-top: 70px;
+        }
+
+        .row {
+            display: flex;
+            gap: 20px;
+        }
+
+        .col {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .col img {
+            width: 400px;
+            height: auto;
+            border-radius: 15px;
+            box-shadow: 7px 4px 4px grey;
+            opacity: 0.7;
+        }
+
+        .col img:hover {
+            opacity: 1;
+
+        }
+
+        img {
+            opacity: 0.3;
+        }
+
+        ul {
+            list-style-type: none;
+
+            display: inline-flex;
+        }
+
+        ul li a {
+            text-decoration: none;
+            color: white;
+            padding: 30px;
+        }
+
+        .row-color {
+            width: 100vw;
+            height: 55px;
+            text-align: center;
+            background-color: blue;
+        }
+
+        ul li a:hover {
+            color: rgb(192, 192, 29);
+        }
+    </style>
+</head>
+
+
+<body>
+
+    <div class="image-container">
+        <img src="images/stadium.jpg" id="img" alt="Blurred Image">
+        <div class="text-overlay">
+            <h1>GALLERY</h1>
+
+        </div>
+    </div>
+
+
+    <hr>
+
+
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <img src="images/img12.jpg" alt="">
+                <img src="images/Pakistan.jpg" alt="">
+                <img src="images/img1.jpg" alt="">
+                <img src="images/img2.jpg" alt="">
+                <img src="images/img5.jpg" alt="">
+                <img src="images/img3.jpg" alt="">
+                <img src="images/img4.jpg" alt="">
+            </div>
+
+
+            <div class="col">
+                <img src="images/img2.jpg" alt="">
+                <img src="images/img8.jpg" alt="">
+                <img src="images/Ground light.jpg" alt="">
+                <img src="images/img9.jpg" alt="">
+                <img src="images/img10.jpg" alt="">
+                <img src="images/img11.jpg." alt="">
+                <img src="images/img6.jpg" alt="">
+                <img src="images/img6.jpg" alt="">
+            
+
+            </div>
+
+            <div class="col">
+                <img src="images/img1.jpg" alt="">
+                <img src="images/img13.jpg" alt="">
+                <img src="images/img11.jpg" alt="">
+                <img src="images/img15.jpg" alt="">
+                <img src="images/img16.jpg" alt="">
+                <img src="images/img17.jpg" alt="">
+                <img src="images/img18.jpg" alt="">
+            </div>
+
+
+        </div>
+    </div>
+
+
+    <footer>
+        <div class="center">
+            <div class="container">
+                <div class="row-color">
+                    <div>
+                        <ul>
+                            <li><a href="index.html" class="btn text-light ms-5 mx-5">HOME</a></li>
+                            <li><a href="gallery.html" class="btn text-light mx-5">GALLERY</a></li>
+                            <li> <a href="group.html" class="btn text-light mx-5">GROUP</a></li>
+                            <li> <a href="pointsTable.html" class="btn text-light mx-5">POINTS TABLE</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>
